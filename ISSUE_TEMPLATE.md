@@ -1,19 +1,30 @@
-## Add new widget to page
 
-The page does not have a widget. Add a widget to the page.
+## If you want to create ...
 
-## User story
+### New Bug report or fix to existing bug
 
-As a registered user I need a widget on the page so that I have something to click
+Please provide at least following information:
+- Short description of the bug
+- How to reproduce 
+- Version/TAG which is affected 
+- Description of the possible fix 
 
-## Design
+
+### New feature or a request for one
+
+Please provide at least following information:
+- Use cases for this feature. Why this feature important
+- How this is - or should be implemented
+ 
+
+### Question
+
+Please provide enough context. Why you want this to be answered 
+
+
+### You can also provide
 
 [Monochrome diagram of the desired design, e.g. a wireframe.]
+Links to more information 
 
-## Definition of Done
-The task is complete when the following criteria are satisfied:
 
-- [ ] Widget appears on page
-- [ ] User can click on widget
-
-Note: Some of the above details will be added during the feature discovery and planning process.

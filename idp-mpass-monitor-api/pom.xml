@@ -74,14 +74,6 @@ THE SOFTWARE.
                     <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>com.versioneye</groupId>
-                <artifactId>versioneye-maven-plugin</artifactId>
-                <configuration>
-                    <apiKey>${VERSIONEYE_API_KEY}</apiKey>
-                    <updatePropertiesAfterCreate>false</updatePropertiesAfterCreate>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 

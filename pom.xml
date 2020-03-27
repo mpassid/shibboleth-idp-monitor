@@ -33,6 +33,7 @@ THE SOFTWARE.
     <modules>
         <module>idp-mpass-monitor-api</module>
         <module>idp-mpass-monitor-impl</module>
+        <module>idp-mpass-monitor-standalone</module>
     </modules>
 
     <properties>
@@ -85,6 +86,11 @@ THE SOFTWARE.
             <dependency>
                 <groupId>fi.mpass</groupId>
                 <artifactId>idp-mpass-monitor-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fi.mpass</groupId>
+                <artifactId>idp-mpass-monitor-impl</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -335,11 +341,11 @@ THE SOFTWARE.
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>2.10</version>
+                    <version>3.1.1</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>2.5.5</version>
+                    <version>3.2.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -359,12 +365,12 @@ THE SOFTWARE.
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.10.3</version>
+                    <version>3.1.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.3</version>
+                    <version>3.0.0-M1</version>
                 </plugin>
             </plugins>
         </pluginManagement>

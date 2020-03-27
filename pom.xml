@@ -63,6 +63,13 @@ THE SOFTWARE.
                 <enabled>false</enabled>
             </releases>
         </repository>
+        <repository>
+            <id>central-https</id>
+            <url>https://repo1.maven.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
     </repositories>
 
     <pluginRepositories>

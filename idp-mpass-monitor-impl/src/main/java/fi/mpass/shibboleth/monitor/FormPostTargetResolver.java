@@ -112,7 +112,7 @@ public class FormPostTargetResolver extends BaseSequenceStepResolver {
             }
         }
         if (action != null) {
-            final String url = action.replaceAll("&#x3a;", ":").replaceAll("&#x2f;", "/");
+            final String url = action.replaceAll("&#x3a;", ":").replaceAll("&#x2f;", "/").replace("&amp;", "&");
             resultStep.setUrl(url);
             if (!url.startsWith("http")) {
                 final HttpHost target = (HttpHost) context.getAttribute(

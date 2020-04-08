@@ -28,6 +28,7 @@ import java.util.Map;
 
 import org.apache.http.protocol.HttpContext;
 
+import fi.mpass.shibboleth.monitor.BaseSequenceStepResolver.SequenceResponse;
 import fi.mpass.shibboleth.support.HttpClientBuilder;
 
 /**
@@ -68,6 +69,13 @@ public class AddParametersResolver extends BaseSequenceStepResolver {
                 .append(getParameters.get(key));
         }
         result.setUrl(urlBuilder.toString());
+        final SequenceResponse response = resolveStep(context, startingStep, isFollowRedirects());
+        final String redirectUrl = getHeaderValue(response.getHeaders(), "Location");
+        if (!isFollowRedirects() && redirectUrl != null) {
+            final SequenceStep resultStep = new SequenceStep();
+            resultStep.setUrl(completeUrl(context, redirectUrl));
+            return resultStep;
+        }
         return result;
     }
 }

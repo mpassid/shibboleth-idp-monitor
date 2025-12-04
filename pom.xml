@@ -27,7 +27,7 @@ THE SOFTWARE.
     </parent>
     <groupId>fi.mpass</groupId>
     <artifactId>idp-monitor</artifactId>
-    <version>0.9.5-SNAPSHOT</version>
+    <version>0.9.6-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>

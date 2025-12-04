@@ -300,7 +300,7 @@ public abstract class BaseSequenceStepResolver implements SequenceStepResolver {
     protected String getHeaderValue(final Header[] headers, final String headerName) {
         log.trace("Trying to find header {} from {} headers", headerName, headers.length);
         for (final Header header : headers) {
-            if (headerName.equals(header.getName())) {
+            if (headerName.toLowerCase().equals(header.getName().toLowerCase())) {
                 log.trace("Found value {} for {}", header.getValue(), headerName);
                 return StringSupport.trimOrNull(header.getValue());
             }

@@ -31,7 +31,7 @@ THE SOFTWARE.
     <groupId>fi.mpass</groupId> 
     <artifactId>idp-mpass-monitor-standalone</artifactId>
     <packaging>jar</packaging>
-    <version>0.9.5-SNAPSHOT</version>
+    <version>0.9.6-SNAPSHOT</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -85,12 +85,12 @@ THE SOFTWARE.
         <dependency>
             <groupId>fi.mpass</groupId>
             <artifactId>idp-mpass-monitor-api</artifactId>
-            <version>0.9.5-SNAPSHOT</version>
+            <version>0.9.6-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>fi.mpass</groupId>
             <artifactId>idp-mpass-monitor-impl</artifactId>
-            <version>0.9.5-SNAPSHOT</version>
+            <version>0.9.6-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>commons-lang</groupId>

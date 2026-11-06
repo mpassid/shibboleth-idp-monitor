@@ -1,3 +1,9 @@
+> [!WARNING]
+> **This repository is archived and no longer maintained.**
+> It is kept read-only for reference. No issues, pull requests or security updates will be accepted.
+> Archived on: YYYY-MM-DD
+
+
 # (Experimental) Integrated SSO monitoring for Shibboleth Identity Provider 3
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://opensource.org/licenses/MIT)
